@@ -5,15 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Test</title>
+  <title>LoseJoe</title>
 </head>
 
 <body>
-  <p id="param">Test</p>
+  <p id="param">Your Code Is</p>
   <script>
   var code = window.location.href.split("?")
-    alert(code[1])
+  document.body.innerHTML += `<p>${code[1]}</p>`
   </script>
+  
 </body>
 
 </html>
