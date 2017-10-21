@@ -1,13 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="un-US">
+<meta name="viewport" content="width=device-width, initial-scale=1" /></meta>
+<meta charset="utf-8"></meta>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+<title>Code</title>
+<meta name="author" content="LoseJoe"></meta>
+<link rel="shortcut icon" href="http://www.freeiconspng.com/uploads/cool-icon-15.png"></link>
+
+<style>
+html {
+background: url('https://wallpaperscraft.com/image/black_light_dark_figures_73356_1920x1080.jpg')
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+</style>
+
 <body>
+
+<div class="w3-container w3-small w3-mobile w3-white">
 
 <p>Your code is</p>
   <script>
   var code = window.location.href.split("?")
-  document.body.innerHTML += `<p>${code[1]}</p>`
+  document.body.innerHTML += `<div class="w3-container w3-small w3-mobile w3-white"><p>${code[1]}</p></div>`
   </script>
+  
+</div>
   <div class="w3-small w3-bottom w3-orange w3-mobile"><p class="w3-text-black w3-hover-text-grey w3-small">Website Created By LoseJoe.</p></div>
-</body>
 
+</body>
 </html>
