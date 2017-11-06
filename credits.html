@@ -1,75 +1,173 @@
-<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <title>LoseJoe</title>
 </head>
 <style>
+  
+  .navb {
+    display: inline-block;
+    background-color: #333333;
+    width: 100%;
+    height:40px;
+    margin: 0;
+    font-size: 20px;
+    font-family: Arial;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    transition: background-color 0.6s, color 0.3s;
+    
+  }
+  
+  .bodycont {
+    margin-left: 20%;
+  }
+  
+  .border {
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: #000000;
+  }
+  
+  .credits {
+    font-family: Arial;
+    color: #666666;
+  }
+  
+  
+  .credit {
+    letter-spacing: 0.2vw;
+    font-family: Arial;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #333333;
+    transition: color 0.6s, letter-spacing 10s;
+    cursor: pointer;
+
+  }
+  
+  .credit:hover {
+    letter-spacing: 1vw;
+    font-family: Arial;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+    .navb:hover {
+    display: inline-block;
+    background-color: #111111;
+    color: #aaaaaa;
+    width: 100%;
+    height:40px;
+    margin: 0;
+  }
+  
+  
+    
+  .navb2 {
+    display: inline-block;
+    background-color: #333333;
+    width: 20%;
+    height:40px;
+    margin: 0;
+    font-size: 20px;
+    font-family: Arial;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    transition:width 0.2s, background-color 0.6s, color 0.3s;
+    
+  }
+  
+  .text {
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 1.5vw;
+    color: #111111;
+  }
+  
+  .text code {
+    font-family: Courier;
+    color: #555555
+  }
+      .navb2:hover {
+    display: inline-block;
+    background-color: #111111;
+    color: #aaaaaa;
+    width: 22%;
+    height:40px;
+    margin: 0;
+  }
+  
+  
+  .nav {
+    display: inline-block;
+    width: 20%;
+    height: 3000px;
+    position: fixed;
+    padding: 0 0 0 0;
+    background-color: #222222;
+    margin: 0 0 0 0;
+  }
+
+  
 body, html {
     height: 100%;
-}
-
-.bg { 
-    /* The image used */
-    background-image: url("bg.gif");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color :#00ffff;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 h1,h2{
-  text-align:center;
+  
 }
 h1{
   color:rgba(100, 50, 255, .8);
-}
-.green {
-color: #00ff02
-}
-.grey {
-color: rgba(255,0,255,0.3)
+  font-family: Arial;
+  font-size: 5vw;
+  letter-spacing: 1vw;
 }
 .rainbow {
-   /* Chrome, Safari, Opera */
   -webkit-animation: rainbow 2s infinite; 
-  
-  /* Internet Explorer */
+ 
   -ms-animation: rainbow 2s infinite;
-  
-  /* Standar Syntax */
-  animation: rainbow 2s infinite; 
+ 
+  animation: rainbow linear 2s infinite; 
 }
 
-/* Chrome, Safari, Opera */
 @-webkit-keyframes rainbow{
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	80%{color: blue;}
-	100%{color: orange;}	
+	0%{color: red;}
+  16%{color: orange;}
+	33%{color: yellow;}
+	49%{color: green;}
+	66%{color: blue;}
+	83%{color: purple;}
+  100%{color: red;}
 }
 /* Internet Explorer */
 @-ms-keyframes rainbow{
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	80%{color: blue;}
-	100%{color: orange;}	
+	0%{color: red;}
+  16%{color: orange;}
+	33%{color: yellow;}
+	49%{color: green;}
+	66%{color: blue;}
+	83%{color: purple;}
+  100%{color: red;}
 }
 
 /* Standar Syntax */
 @keyframes rainbow{
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	80%{color: blue;}
-	100%{color: orange;}	
+	0%{color: red;}
+  16%{color: orange;}
+	33%{color: yellow;}
+	49%{color: green;}
+	66%{color: blue;}
+	83%{color: purple;}
+  100%{color: red;}
 }
 
 .rainbow2 {
@@ -81,26 +179,40 @@ color: rgba(255,0,255,0.3)
 }
 
 </style>
+  
 	<body>
-		<div class="bg"></div>
-		<div class="w3-black w3-display-bottommiddle w3-padding-small w3-round-large w3-opacity">
-		<p>Website Created By LoseJoe</p>
-		</div>
-		
-		<div class="w3-grey w3-display-middle w3-padding-large w3-round-xxlarge" style="text-align:center">
+		<div class="nav">
+      <div><a href="./index.html" class="navb">Home</a></div>
+		<div><a href="https://discordapp.com/invite/4wb8qke" class="navb">Support</a></div>
+		<div><a href="./credits.html" class="navb">Credits</a></div>
+		<div><a href="./help.html" class="navb">Help</a></div>
+    </div>
+    <br>
+    
+    
+    <div class="bodycont">
+      
+      
+      <center>
+        
+	<div>
 		<h1>Developers</h1>
-		<p class="rainbow">LoseJoe</p>
-		<p class="rainbow">HypeRayy</p>
+		<p class="credit">LoseJoe</p>
+		<p class="credit">HypeRayy</p>
 		<h1>Designers</h1>
-		<p class="rainbow2">PopIsOnDiscord</p>
+		<p class="credit">PopIsOnDiscord</p>
+    <p class="credit">Qwerty</p>
+		</div>
+        
+        
+		      </center>
+    <br><br>
+		<div class="">
+		<p class="credits">Website Created By qwerty#2483</p>
+			
 		</div>
 
-		<div class="w3-black w3-display-topright w3-padding-large w3-round-xlarge">
-		<a href="./index.html" class="w3-button w3-white w3-hover-green w3-border-red">Home</a>
-		<a href="https://discordapp.com/invite/4wb8qke" class="w3-button w3-white w3-hover-green w3-border-red">Support</a>
-		<a href="./credits.html" class="w3-button w3-white w3-hover-green w3-border-red">Credits</a>
-		<a href="./help.html" class="w3-button w3-white w3-hover-green w3-border-red">Help</a>
-		</div>
+    </div>
 
 	</body>
 

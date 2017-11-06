@@ -1,69 +1,205 @@
-<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <title>LoseJoe</title>
 </head>
 <style>
+ .navb {
+    display: inline-block;
+    background-color: #333333;
+    width: 100%;
+    height:40px;
+    margin: 0;
+    font-size: 20px;
+    font-family: Arial;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    transition: background-color 0.6s, color 0.3s;
+    
+  }
+  
+  .bodycont {
+    margin-left: 20%;
+  }
+  
+  .border {
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: #000000;
+  }
+  
+  .credits {
+    font-family: Arial;
+    color: #666666;
+  }
+  
+  
+    .navb:hover {
+    display: inline-block;
+    background-color: #111111;
+    color: #aaaaaa;
+    width: 100%;
+    height:40px;
+    margin: 0;
+  }
+  
+  
+    
+  .navb2 {
+    display: inline-block;
+    background-color: #333333;
+    width: 20%;
+    height:40px;
+    margin: 0;
+    font-size: 20px;
+    font-family: Arial;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    transition:width 0.2s, background-color 0.6s, color 0.3s;
+    
+  }
+  
+  .text {
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 1.5vw;
+    color: #111111;
+  }
+  
+  .text code {
+    font-family: Courier;
+    color: #555555
+  }
+      .navb2:hover {
+    display: inline-block;
+    background-color: #111111;
+    color: #aaaaaa;
+    width: 22%;
+    height:40px;
+    margin: 0;
+  }
+  
+  table {
+    background-color: #111111;
+    width: 90%;
+    font-family: Arial;
+  }
+  
+  .tt {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    height: 60px;
+    
+  }
+  
+  
+  .tb {
+    background-color: #666666;
+    color: #000000;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    transition: color 0.6s, background-color 0.6s
+  }
+  
+.tb:hover {
+    background-color: #222222;
+    color: #ffffff;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+  
+  }
+  
+  .th {
+    background-color: #002255;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    transition: color 0.6s, background-color 0.6s
+  }
+  
+  
+   .th:hover {
+    background-color: #0011cc;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    color: #cccccc;
+  }
+  
+  .nav {
+    display: inline-block;
+    width: 20%;
+    height: 3000px;
+    position: fixed;
+    padding: 0 0 0 0;
+    background-color: #222222;
+    margin: 0 0 0 0;
+  }
+
+  
 body, html {
     height: 100%;
-}
-
-.bg { 
-    /* The image used */
-    background-image: url("bg.gif");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color :#00ffff;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 h1,h2{
-  text-align:center;
+  
 }
 h1{
   color:rgba(100, 50, 255, .8);
+  font-family: Arial;
+  font-size: 5vw;
+  letter-spacing: 1vw;
 }
 .rainbow {
-   /* Chrome, Safari, Opera */
   -webkit-animation: rainbow 2s infinite; 
-  
-  /* Internet Explorer */
+ 
   -ms-animation: rainbow 2s infinite;
-  
-  /* Standar Syntax */
-  animation: rainbow 2s infinite; 
+ 
+  animation: rainbow linear 2s infinite; 
 }
 
-/* Chrome, Safari, Opera */
 @-webkit-keyframes rainbow{
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	80%{color: blue;}
-	100%{color: orange;}	
+	0%{color: red;}
+  16%{color: orange;}
+	33%{color: yellow;}
+	49%{color: green;}
+	66%{color: blue;}
+	83%{color: purple;}
+  100%{color: red;}
 }
 /* Internet Explorer */
 @-ms-keyframes rainbow{
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	80%{color: blue;}
-	100%{color: orange;}	
+	0%{color: red;}
+  16%{color: orange;}
+	33%{color: yellow;}
+	49%{color: green;}
+	66%{color: blue;}
+	83%{color: purple;}
+  100%{color: red;}
 }
 
 /* Standar Syntax */
 @keyframes rainbow{
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	80%{color: blue;}
-	100%{color: orange;}	
+	0%{color: red;}
+  16%{color: orange;}
+	33%{color: yellow;}
+	49%{color: green;}
+	66%{color: blue;}
+	83%{color: purple;}
+  100%{color: red;}
 }
 
 .rainbow2 {
@@ -76,41 +212,48 @@ h1{
 
 </style>
 	<body>
-		<div class="bg"></div>
-		<div class="w3-black w3-display-bottommiddle w3-padding-small w3-round-large w3-opacity">
-		<p>Website Created By LoseJoe</p>
-		</div>
+    
+  <div class="nav">
+      <div><a href="./index.html" class="navb">Home</a></div>
+		<div><a href="https://discordapp.com/invite/4wb8qke" class="navb">Support</a></div>
+		<div><a href="./credits.html" class="navb">Credits</a></div>
+		<div><a href="./help.html" class="navb">Help</a></div>
+    </div>
+    <br>
+    
+
 		
-		<div class="w3-black w3-display-topright w3-padding-large w3-round-xlarge">
-		<a href="./index.html" class="w3-button w3-white w3-hover-green w3-border-red">Home</a>
-		<a href="https://discordapp.com/invite/4wb8qke" class="w3-button w3-white w3-hover-green w3-border-red">Support</a>
-		<a href="./credits.html" class="w3-button w3-white w3-hover-green w3-border-red">Credits</a>
-		<a href="./help.html" class="w3-button w3-white w3-hover-green w3-border-red">Help</a>
-		</div>
-		
-		<div class="w3-grey w3-display-middle w3-padding-large w3-round-xxlarge w3-responsive" style="text-align:center">
-			<table class="w3-table w3-bordered w3-striped w3-border w3-table-all w3-centered w3-card-4">
-				<tr class="w3-red">
+		<div class="bodycont">
+      <center>
+			<table>
+				<tr class="tt">
 					<th class="w3-padding-large">Command</th>
 					<th class="w3-padding-large">Definition</th>
 					<th class="w3-padding-large">Permissions</th>
 					<th class="w3-padding-large">Cooldown</th>
 				</tr>
-				<tr class="w3-black"><td>Category:</td><td>Phones</td><td></td><td></td></tr>
-				<tr class="w3-hover-green"><td>Userphone</td><td>Chat with users and see who you're chatting with!</td><td>No permissions Needed.</td><td>10 seconds</td></tr>
-				<tr class="w3-hover-green"><td>Hangup</td><td>Hangup the userphone.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
-				<tr class="w3-black"><td>Category:</td><td>Music</td><td></td><td></td></tr>
-				<tr class="w3-hover-green"><td>Play</td><td>Plays Music.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
-				<tr class="w3-hover-green"><td>Pause</td><td>Pauses Music.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
-				<tr class="w3-hover-green"><td>Skip</td><td>Skip the terrible songs your friends play.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
-				<tr class="w3-hover-green"><td>Stop</td><td>Stop all the cringy songs from playing.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
-				<tr class="w3-hover-green"><td>Queue</td><td>Shows you the queue.</td><td>No permissions Needed.</td><td>10 seconds</td></tr>
-				<tr class="w3-hover-green"><td>Resume</td><td>Resumes music.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
-				<tr class="w3-hover-green"><td>Volume</td><td>Sets the volume of music.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
-				<tr class="w3-black"><td>Category:</td><td>Random</td><td></td><td></td></tr>
-				<tr class="w3-hover-green"><td>Google</td><td>Googles something.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
+				<tr class="tb"><td>Category:</td><td>Phones</td><td></td><td></td></tr>
+				<tr class="th"><td>Userphone</td><td>Chat with users and see who you're chatting with!</td><td>No permissions Needed.</td><td>10 seconds</td></tr>
+				<tr class="th"><td>Hangup</td><td>Hangup the userphone.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
+				<tr class="tb"><td>Category:</td><td>Music</td><td></td><td></td></tr>
+				<tr class="th"><td>Play</td><td>Plays Music.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
+				<tr class="th"><td>Pause</td><td>Pauses Music.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
+				<tr class="th"><td>Skip</td><td>Skip the terrible songs your friends play.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
+				<tr class="th"><td>Stop</td><td>Stop all the cringy songs from playing.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
+				<tr class="th"><td>Queue</td><td>Shows you the queue.</td><td>No permissions Needed.</td><td>10 seconds</td></tr>
+				<tr class="th"><td>Resume</td><td>Resumes music.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
+				<tr class="th"><td>Volume</td><td>Sets the volume of music.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
+				<tr class="tb"><td>Category:</td><td>Random</td><td></td><td></td></tr>
+				<tr class="th"><td>Google</td><td>Googles something.</td><td>No permissions Needed.</td><td>5 seconds</td></tr>
 				
 			</table>
+      </center>
+          <br><br>
+		<div class="">
+		<p class="credits">Website Created By qwerty#2483</p>
+			
+		</div>
+
 		</div>
 
 
