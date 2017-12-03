@@ -1,55 +1,189 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title> PowerBoat </title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<div id="navbar">
-	<a href="index.html"><img src="images/navbarlogo.png"></a>
-	<table id="navbtns">
-		<tr>
-			<td><a href="index.html"> Home </a></td>
-			<td><a href="about.html"> About </a></td>
-			<td><a href="contact.html"> Contact </a></td>
-		</tr>
-	</table>
-</div>
-<img src="images/background_left.png" id="bgleft"/>
-<img src="images/background_right.png" id="bgright"/>
-<div id="content">
-	<h1> PowerBoat Discord Bot </h1>
-	<p>Info Here</p>
-	<hr/>
-	<h1> We are awesome bot </h1>
-	<table>
-		<tr>
-			<td> <img src="images/wearenumberone.png" style="height: 80%; margin-right: 10px;"> </td>
-			<td> Info here
- </td>
-		</tr>
-	</table>
-	<hr/>
-	<table>
-	<tr>
-	<td>
-	<h1> Features </h1>
-	<h2> How it works </h2>
-	<p> Info Here</p>
-	<h2> Is it good? </h2>
-	<p> Info Here. </p>
-	</td>
-	<td> <img src="images/imgside.png" style="height: 30%;"> </td>
-	</tr>
-	</table>
-	<hr/>
-	<img src="images/bottombanner.png">
-	<hr/>
-	<p id="footer"> <a href="index.html"> Home </a> | <a href="index.html"> Results </a> | <a href="index.html"> Events </a> | <a href="index.html"> About </a> | <a href="index.html"> Contact </a> | Last Edited: 00/00/0000 </p>
-</div>
-<div id="facebook">
-	<h1> Add to Discord </h1>
-	<a href="https://discordapp.com/oauth2/authorize?client_id=383083305706323968&scope=bot&permissions=8"><img src="images/dc.png"></a>
-</div>
-</body>
+	<head>
+		<title> PowerBoat </title>
+	</head>
+
+	<style>
+		#navbar {
+			position: fixed;
+			right: 0;
+			left: 0;
+			top: 0;
+			margin: 0px;
+			padding: 0px;
+			border-style: none;
+			background-image: url("images/navbarbackground.png");
+			background-repeat: repeat-x;
+			display: table;
+			z-index: 1;
+		}
+
+		#navbar img {
+			height: 150px;
+		}
+
+		#navbar table {
+			display: inline-block;
+			display: table-cell;
+			vertical-align: middle;
+			padding-right: 70%;
+			padding-bottom: 1%;
+			color: white;
+			font-size: 30px;
+			width: 5vh;
+		}
+
+		#navbar td {
+			margin-left: 10px;
+		}
+
+		#navbtns a {
+			text-decoration: none;
+			color: white;
+			padding: 20px;
+			margin-left: 20px;
+		}
+
+		#navbtns a:hover {
+			background-color: white;
+			color: green;
+		}
+
+		body {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#bgleft {
+			top: 0;
+			position: fixed;
+			left: 0;
+			z-index: -999;
+		}
+
+		#bgright {
+			top: 0;
+			position: fixed;
+			right: 0;
+			z-index: -999;
+		}
+
+		#content {
+			background-color: black;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0px;
+			margin-left: 10.3%;
+			margin-right: 25%;
+			padding: 20vh 3% 1% 3%;
+		}
+
+		h1 {
+			color: #BA001A;
+			padding: 0;
+			margin: 0;
+		}
+
+		h2 {
+			color: #BA001A;
+			padding: 0;
+			margin: 0;
+		}
+
+		#content p {
+			color: white;
+		}
+
+		#facebook {
+			position: fixed;
+			right: 18vh;
+			left: 76vw;
+			top: 23vh;
+			z-index: 1;
+			background-color: black;
+			padding: 1vw;
+			text-align: center;
+		}
+
+		#facebook img {
+			width: 10vw;
+
+		}
+
+		#footer {
+			color: gray;
+			text-decoration: none;
+			font-size: 12px;
+			text-align: center;
+		}
+
+		#footer a {
+			text-decoration: none;
+			color: gray;
+		}
+
+		#content td {
+			vertical-align: top;
+			color: white;
+		}
+	</style>
+
+	<body>
+		<div id="navbar">
+			<a href="index.html"><img src="images/navbarlogo.png"></a>
+			<table id="navbtns">
+				<tr>
+					<td><a href="index.html"> Home </a></td>
+					<td><a href="about.html"> About </a></td>
+					<td><a href="contact.html"> Contact </a></td>
+				</tr>
+			</table>
+		</div>
+
+
+
+		<img src="images/background_left.png" id="bgleft"/>
+		<img src="images/background_right.png" id="bgright"/>
+
+
+
+		<div id="content">
+			<h1> PowerBoat Discord Bot </h1>
+			<p>Info Here</p>
+			<hr/>
+			<h1> We are awesome bot </h1>
+			<table>
+				<tr>
+					<td> <img src="images/wearenumberone.png" style="height: 80%; margin-right: 10px;"> </td>
+					<td> Info here
+ 					</td>
+				</tr>
+			</table>
+				<hr/>
+					<table>
+					<tr>
+						<td>
+							<h1> Features </h1>
+							<h2> How it works </h2>
+							<p> Info Here</p>
+							<h2> Is it good? </h2>
+							<p> Info Here. </p>
+						</td>
+						<td> <img src="images/imgside.png" style="height: 30%;"> </td>
+					</tr>
+					</table>
+				<hr/>
+					<img src="images/bottombanner.png">
+				<hr/>
+		</div>
+
+		<div id="facebook">
+			<h1> Add to Discord </h1>
+			<a href="https://discordapp.com/oauth2/authorize?client_id=383083305706323968&scope=bot&permissions=8"><img src="images/dc.png"></a>
+		</div>
+
+	</body>
+
 </html>
