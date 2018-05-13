@@ -1,0 +1,69 @@
+<html>
+	<h1>
+		The offical documentation of Discord.jr
+	</h1>
+
+	<p>
+		How to install:
+		<br>npm i discord.jr --save
+	</p>
+
+	<p>
+		How to create a client:<br>
+		<br>const Discord = require('discord.jr')
+		<br>const Client = new Discord.Client(config.token, {Clientoptions});
+
+	</p>
+
+	<h1>
+		Client options: [Object]
+	</h1>
+
+	<p>
+		<br>Client options include
+		<br>prefix [string]
+		<br>playing [string]
+		<br>status [string]
+		<br>url [string]
+	</p>
+
+	<h1>
+		Register commands:
+	</h1>
+
+	<p>
+
+		Client.Command(name, aliases, description, fulldescription, cooldown, permissions)
+		<br>
+		<br>Values:
+		<br>name [string]
+		<br>aliases [array]
+		<br>description [string]
+		<br>fulldescription [string]
+		<br>cooldown [int]
+		<br>permissions [int]
+
+	</p>
+
+	<h1>
+		Other Client Functions
+	</h1>
+
+	<p>
+
+		<br>Client.Command()
+		<br>Client.getCommand()
+
+	</p>
+
+	<h1>
+		Client events
+	</h1>
+
+	<p>
+		<br>command [(command, message, args)]
+		<br>error [(error)]
+		<br>warn [(warn)]
+	</p>
+
+</html>
