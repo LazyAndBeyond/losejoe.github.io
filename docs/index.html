@@ -1,89 +1,87 @@
 <html>
-	<h1>
-		The offical documentation of Discord.jr
-	</h1>
 
 	<p>
-		How to install:
-		<br>npm i discord.jr --save
-	</p>
+		<h1>
+			Creating a new client:
+		</h1>
 
-	<p>
-		How to create a client:<br>
-		<br>const Discord = require('discord.jr')
-		<br>const Client = new Discord.Client();
-		<br>Client.login(token)
+		<br>const discordjr = require('discord.jr')
+		<br>const client = new discordjr.Client({clientOptions})
 
-	</p>
-	
-	<h1>
-		Discord.jr:
-	</h1>
-	
-	<p>
-		<br>Client
-		<br>jrClient
-		<br>DBManager
-		<br>Logger
-		<br>fetch
-		<br>util
-		<br>Command [Not ADDED]
-		<br>Event [Not ADDED]
-	</p>
-	
-	<h1>
-		Client:
-	</h1>
-	
-	<p>
-		<br>options
-		<br>rest
-		<br>dataManager
-		<br>manager
-		<br>ws
-		<br>resolver
-		<br>actions
-		<br>voice
-		<br>shard
-		<br>users
-		<br>guilds
-		<br>channels
-		<br>presences
-		<br>user
-		<br>readyAt
-		<br>broadcasts
-		<br>pings
-		<br>DBManager
-		<br>util
-		<br>fetch
-		<br>Logger
-		<br>commands
-		<br>cooldowns
-		
-	</p>
-	
-	<h1>
-		DBManager
-	</h1>
-	
-	<p>
+		<h1>
+			Client functions:
+		</h1>
+
+		<br>.Command({cmdOptions})           -  registers a command
+		<br>.clearInterval(interval)         -  Clears an interval
+		<br>.clearTimeout(timeout)           -  Clears a timeout
+		<br>.createVoiceBroadcast()          -  Creates a voice broadcast
+		<br>.destroy()                       -  Logs out, terminates the connection to discord, and destroys the client
+		<br>.fetchApplication(id)            -  Obtains the Oauth application of the bot from discord
+		<br>.fetchInvite(invite)             -  Obtains an invite from Discord
+		<br>.fetchUser(id, cache)            -  Obtains a user from Discord, or the user cache if its alreadt available
+		<br>.fetchVoiceRegions()             -  Obtains the available voice regions from Discord.
+		<br>.fetchWebhook(id, token)         -  Obtains a webhook from Discord
+		<br>.generateInvite(permissions)     -  Generates a link that can be used to invite the bot to a guild
+		<br>.login(token)                    -  Logs the client in, establishing a websocket connection to Discord.
+		<br>.setInterval(fn, delay, ...args) -  Sets an interval that will be automatically cancelled if the client is destroyed.
+		<br>.setTimeout(fn, delay, ...args)  -  Sets a timeout that will be automatically cancelled if the client is destroyed.
+		<br>.sweepMessages(lifetime)         -  Sweeps all text-based channels' messages and removes the ones older than the max message lifetime. 
+		<br>.syncGuilds(guilds)              -  Requests a sync of guild data with Discord.
+
+		<h1>
+			clientOptions: [Object]
+		</h1>
+
+		<br>prefix [string]
+
+		<h1>
+			cmdOptions: [Object]
+		</h1>
+
+		<br>name [string]
+		<br>dm [boolean]
+		<br>args [boolean]
+		<br>usage [string]
+		<br>aliases [array]
+		<br>permissions [Integer]
+		<br>nsfw [boolean]
+		<br>enabled [boolean]
+		<br>cooldown [Integer]
+		<br>execute [Function]
+
+		<h1>
+			Client values:
+		</h1>
+
+		<br>fs            -  The file system module
+		<br>DBManager     -  The manager for DB's
+		<br>util          -  Utilities
+		<br>fetch         -  fetch
+		<br>Logger        -  Manages logs
+		<br>commands      -  Collection of commands
+		<br>cooldowns     -  Collection of cooldowns
+
+		<h1>
+			DBManager
+		</h1>
+
 		<br>Creating a new DB:	
-		<br>var db = new Client.db({"name":"config"})
 		<br>
+		<br>var db = new Client.db({"name":"config"}) 
+		<br>Functions: 
+		<br>
+		<br>db.write(data) 
+		<br>db.read() 
+		<br>db.delete() 
+
+		<h1>
+			Util:
+		</h1>
+
 		<br>Functions:
 		<br>
-		<br>db.write(data)
-		<br>db.read()
-		<br>db.delete()
-		<br>
-	</p>
-	
-	<h1>
-		util:
-	</h1>
-	
-	<p>
-		<br>write(path data)
+		<br>write(path, data)
 		<br>read(path)
 		<br>delete(path)
 		<br>parse(value)
@@ -91,37 +89,31 @@
 		<br>isObject(input)
 		<br>isClass(input)
 		<br>isFunction(input)
-	</p>
-	
-	<h1>
-		fetch:
-	</h1>
-	
-	<p>
-		Client.fetch(url)
-	</p>
-			
-	<h1>
-		logger:
-	</h1>
-	
-	<p>
-		<br>log()
+
+		<h1>
+			fetch:
+		</h1>
+
+		<br>Functions:
 		<br>
-		<br>commands [collection]
-		<br>cooldowns [collection]
+		<br>fetch(url)
+
+		<h1>
+			Logger:
+		</h1>
+
+		<br>Functions:
+		<br>
+		<br>log(text)
+		<br>clear()
+		<br>error(text)
+		<br>warn(text)
+
+
+
+
+
 	</p>
-	
-
-	
-	
-	
-	
-	
-	
-	
-
-	
-
 
 </html>
+
