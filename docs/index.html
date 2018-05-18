@@ -11,59 +11,117 @@
 	<p>
 		How to create a client:<br>
 		<br>const Discord = require('discord.jr')
-		<br>const Client = new Discord.Client(config.token, {Clientoptions});
+		<br>const Client = new Discord.Client();
+		<br>Client.login(token)
 
 	</p>
-
+	
 	<h1>
-		Client options: [Object]
+		Discord.jr:
 	</h1>
-
+	
 	<p>
-		<br>Client options include
-		<br>prefix [string]
-		<br>playing [string]
-		<br>status [string]
-		<br>url [string]
+		<br>Client
+		<br>jrClient
+		<br>DBManager
+		<br>Logger
+		<br>fetch
+		<br>util
+		<br>Command [Not ADDED]
+		<br>Event [Not ADDED]
 	</p>
-
+	
 	<h1>
-		Register commands:
+		Client:
 	</h1>
-
+	
 	<p>
-
-		Client.Command(name, aliases, description, fulldescription, cooldown, permissions)
+		<br>options
+		<br>rest
+		<br>dataManager
+		<br>manager
+		<br>ws
+		<br>resolver
+		<br>actions
+		<br>voice
+		<br>shard
+		<br>users
+		<br>guilds
+		<br>channels
+		<br>presences
+		<br>user
+		<br>readyAt
+		<br>broadcasts
+		<br>pings
+		<br>DBManager
+		<br>util
+		<br>fetch
+		<br>Logger
+		<br>commands
+		<br>cooldowns
+		
+	</p>
+	
+	<h1>
+		DBManager
+	</h1>
+	
+	<p>
+		<br>Creating a new DB:	
+		<br>var db = new Client.db({"name":"config"})
 		<br>
-		<br>Values:
-		<br>name [string]
-		<br>aliases [array]
-		<br>description [string]
-		<br>fulldescription [string]
-		<br>cooldown [int]
-		<br>permissions [int]
-
+		<br>Functions:
+		<br>
+		<br>db.write(data)
+		<br>db.read()
+		<br>db.delete()
+		<br>
 	</p>
-
+	
 	<h1>
-		Other Client Functions
+		util:
 	</h1>
-
+	
 	<p>
-
-		<br>Client.Command()
-		<br>Client.getCommand()
-
+		<br>write(path data)
+		<br>read(path)
+		<br>delete(path)
+		<br>parse(value)
+		<br>isNumber(input)
+		<br>isObject(input)
+		<br>isClass(input)
+		<br>isFunction(input)
 	</p>
-
+	
 	<h1>
-		Client events
+		fetch:
 	</h1>
-
+	
 	<p>
-		<br>command [(command, message, args)]
-		<br>error [(error)]
-		<br>warn [(warn)]
+		<client>.fetch(<url>)
 	</p>
+			
+	<h1>
+		logger:
+	</h1>
+	
+	<p>
+		<br>log()
+		<br>
+		<br>commands [collection]
+		<br>cooldowns [collection]
+	</p>
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+
 
 </html>
